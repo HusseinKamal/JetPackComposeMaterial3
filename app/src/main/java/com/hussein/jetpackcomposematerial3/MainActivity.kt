@@ -12,6 +12,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.hussein.jetpackcomposematerial3.ui.theme.JetpackComposeMaterial3Theme
+import com.hussein.jetpackcomposematerial3.ui.theme.compose.BlurCompose
 
 @ExperimentalMaterial3Api
 class MainActivity : ComponentActivity() {
@@ -25,7 +26,8 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colorScheme.background
                 ) {
                     //Greeting("Android")
-                    TopBar()
+                    //TopBar()
+                    BlurCompose()
                 }
             }
         }
