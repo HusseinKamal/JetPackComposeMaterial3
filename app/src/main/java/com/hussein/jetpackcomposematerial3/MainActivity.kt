@@ -8,11 +8,11 @@ import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
+import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.hussein.jetpackcomposematerial3.ui.theme.JetpackComposeMaterial3Theme
-import com.hussein.jetpackcomposematerial3.ui.theme.compose.BlurCompose
+import com.hussein.jetpackcomposematerial3.ui.theme.compose.ThemeSwitcher
 
 @ExperimentalMaterial3Api
 class MainActivity : ComponentActivity() {
@@ -27,7 +27,11 @@ class MainActivity : ComponentActivity() {
                 ) {
                     //Greeting("Android")
                     //TopBar()
-                    BlurCompose()
+                    //BlurCompose()
+                    //DateTimeDialog()
+
+                    var darkTheme by remember { mutableStateOf(false) }
+                    ThemeSwitcher(darkTheme = darkTheme, onThemeUpdated = { darkTheme = !darkTheme } )
                 }
             }
         }
