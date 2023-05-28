@@ -12,6 +12,7 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.hussein.jetpackcomposematerial3.ui.theme.JetpackComposeMaterial3Theme
+import com.hussein.jetpackcomposematerial3.ui.theme.compose.LottieAnimation
 import com.hussein.jetpackcomposematerial3.ui.theme.compose.ThemeSwitcher
 
 @ExperimentalMaterial3Api
@@ -30,8 +31,9 @@ class MainActivity : ComponentActivity() {
                     //BlurCompose()
                     //DateTimeDialog()
 
-                    var darkTheme by remember { mutableStateOf(false) }
-                    ThemeSwitcher(darkTheme = darkTheme, onThemeUpdated = { darkTheme = !darkTheme } )
+                    /*var darkTheme by remember { mutableStateOf(false) }
+                    ThemeSwitcher(darkTheme = darkTheme, onThemeUpdated = { darkTheme = !darkTheme } )*/
+                    LottieAnimation()
                 }
             }
         }

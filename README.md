@@ -5,3 +5,4 @@ This is JetpackCompose example app with many composable views for Material3 ####
 3-Add Bill Of Material (BOM)in material 3  #####
 4-Date and Timer Picker Dialog material 3  #####
 5-Theme Switcher material 3  #####
+6-Lottie Animation material 3  #####
