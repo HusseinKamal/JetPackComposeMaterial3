@@ -14,3 +14,5 @@ This is JetpackCompose example app with many composable views for Material3
 6-Lottie Animation material 3  
 
 7-Transition With Horizontal Pager Compose material 3  
+
+8-Animated Card Border
