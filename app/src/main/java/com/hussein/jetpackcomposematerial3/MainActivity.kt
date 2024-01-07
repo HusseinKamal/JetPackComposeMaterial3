@@ -3,6 +3,7 @@ package com.hussein.jetpackcomposematerial3
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
@@ -19,9 +20,11 @@ import com.hussein.jetpackcomposematerial3.ui.theme.JetpackComposeMaterial3Theme
 import com.hussein.jetpackcomposematerial3.ui.theme.compose.AnimatedBorderCard
 import com.hussein.jetpackcomposematerial3.ui.theme.compose.HorizontalPagerCompose
 import com.hussein.jetpackcomposematerial3.ui.theme.compose.LottieAnimation
+import com.hussein.jetpackcomposematerial3.ui.theme.compose.MarqueeText
 import com.hussein.jetpackcomposematerial3.ui.theme.compose.ThemeSwitcher
 
 @ExperimentalMaterial3Api
+@ExperimentalFoundationApi
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -41,6 +44,7 @@ class MainActivity : ComponentActivity() {
                     ThemeSwitcher(darkTheme = darkTheme, onThemeUpdated = { darkTheme = !darkTheme } )*/
                     //LottieAnimation()
                     //HorizontalPagerCompose()
+                    MarqueeText()
                 }
             }
         }
